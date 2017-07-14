@@ -1,0 +1,25 @@
+<channel
+   name="Exporter"
+   guid="905C9F428DDE8FEBB45DA55291BDD5D9"
+   description="This shows the usage a little Lua library to create a zipped up translator project programmatically."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Exporter-FromHTTP-Ts0Y9xRsQDEahi"
+      commit_id="e22a4bc3ee8713237251c4b691a810ff99fac48a"
+      commit_comment="Put in some example files."
+      mapper_url_path="export"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
